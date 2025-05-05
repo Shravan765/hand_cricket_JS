@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hand Cricket!</title>
+    </head>
+    <body>
+        <div id = "intro_text"><i>
+            The rules are simple. Either of you or the machine will get to bat first.<br>
+            While "batting" or "bowling", you can pick a number between 0 and 6.<br>
+            If the bowling side picks the same number as the batting side, the batsman is considered "out".<br>
+            Else, the batting team's score increases by whatever number they picked.<br>
+            0 works differently; the batting team's score increases by whatever value the bowling side picked,
+            except 0 in which case the batting team is out.<br>
+            Whoever scores the most wins!
+        </i></div>
+
+        <div id = "toss"></div>
+
+
+        <div id = "batting"></div>
+
+        <form id = "scoring" style="display: none;">
+            <label><input type = "radio" name = "score" value="0" onclick="game()">0</label>
+            <label><input type = "radio" name = "score" value="1" onclick="game()">1</label>
+            <label><input type = "radio" name = "score" value="2" onclick="game()">2</label>
+            <label><input type = "radio" name = "score" value="3" onclick="game()">3</label>
+            <label><input type = "radio" name = "score" value="4" onclick="game()">4</label>
+            <label><input type = "radio" name = "score" value="5" onclick="game()">5</label>
+            <label><input type = "radio" name = "score" value="6" onclick="game()">6</label>
+        </form>
+
+        <div id = "comment"></div>
+
+        
+
+        
+        <div id = "result"></div>
+        
+    
+        <script src = "script.js"></script>
+    </body>
+</html>
