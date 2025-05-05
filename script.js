@@ -58,7 +58,8 @@ function game()
                     "Machine needs "+(player_score+1)+" to win";
                     machine_score = 0;
 
-                    document.getElementById("toss").innerHTML = "Machine needs "+(player_score+1)+" to win";
+                    document.getElementById("toss").innerHTML = "Machine needs "+(player_score+1)+" to win<br>"+
+                        "Start the 2nd innings by pressing the buttons!";
                 }
             else
                 {
@@ -140,7 +141,8 @@ function game()
                     "You need "+(machine_score+1)+" to win";
                     player_score = 0;
 
-                    document.getElementById("toss").innerHTML = "You need "+(machine_score+1)+" to win";
+                    document.getElementById("toss").innerHTML = "You need "+(machine_score+1)+" to win<br>"+
+                        "Start the 2nd innings by pressing the buttons!";
                 }
             else
                 {
